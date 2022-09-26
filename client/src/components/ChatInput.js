@@ -14,7 +14,7 @@ const addMessage = async () => {
             message: textArea
         }
         try {
-            await axios.post('http://localhost:8000/message', { message })
+            await axios.post('http://159.65.27.104/message', { message })
             getUsersMessages()
             getClickedUsersMessages()
             setTextArea("")

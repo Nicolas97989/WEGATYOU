@@ -11,7 +11,7 @@ const MatchesDisplay = ({ matches, setClickedUser }) => {
 
     const getMatches = async () => {
         try {
-           const response = await axios.get('http://localhost:8000/users', {
+           const response = await axios.get('http://159.65.27.104/users', {
                 params: { userIds: JSON.stringify(matchedUserIds)}
             });
 

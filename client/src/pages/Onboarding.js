@@ -34,7 +34,7 @@ const Onboarding = () => {
         e.preventDefault()
     
         try {
-            const response =  await axios.put('http://localhost:8000/user', { formData })
+            const response =  await axios.put('http://159.65.27.104/user', { formData })
             console.log(response)
             const success = response.status === 200
             if (success) navigate('/dashboard')
