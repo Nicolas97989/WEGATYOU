@@ -28,7 +28,7 @@ const handleClick = () => {
                 return
         } 
     
-     const response = await axios.post(`http://localhost:8000/${isSignUp ? 'signup' : 'login'}`,{ email, password })
+     const response = await axios.post(`http://159.65.27.104/${isSignUp ? 'signup' : 'login'}`,{ email, password })
 
      setCookie('AuthToken', response.data.token)
      setCookie('UserId', response.data.userId)
